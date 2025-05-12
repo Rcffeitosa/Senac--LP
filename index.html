@@ -31,23 +31,25 @@
     </head>
     <body>
         <header>
-            <a class="header-logo" href="">
-                <img src="./assets/images/logos/logo-azul-fundo-transparente.png" alt="logo" />
-            </a>
-            <div class="collapsible-header animated-collapse" id="collapsed-header-items">
-                <div class="header-nav">
-                    <a class="header-links" href="#sobre"> Sobre nós </a>
-                    <a class="header-links" href="#funcionalidades"> Funcionalidades </a>
-                    <a class="header-links" href="#blog"> Blog </a>
-                    <a class="header-links" href="#contato"> Contato </a>
+            <div class="container">
+                <a class="header-logo" href="">
+                    <img src="./assets/images/logos/logo-azul-fundo-transparente.png" alt="logo" />
+                </a>
+                <div class="collapsible-header animated-collapse" id="collapsed-header-items">
+                    <div class="header-nav">
+                        <a class="header-links" href="#sobre"> Sobre nós </a>
+                        <a class="header-links" href="#funcionalidades"> Funcionalidades </a>
+                        <a class="header-links" href="#blog"> Blog </a>
+                        <a class="header-links" href="#contato"> Contato </a>
+                    </div>
+                    <div class="header-actions">
+                        <a href="" aria-label="signup" class="download-btn">
+                            <span>Baixe o app</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="header-actions">
-                    <a href="" aria-label="signup" class="download-btn">
-                        <span>Baixe o app</span>
-                    </a>
-                </div>
+                <button class="menu-btn bi bi-list" onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
             </div>
-            <button class="menu-btn bi bi-list" onclick="toggleHeader()" aria-label="menu" id="collapse-btn"></button>
         </header>
 
         <main>
@@ -76,199 +78,212 @@
             </section>
 
             <section class="numbers" id="numeros">
-                <div class="numbers-container">
-                    <h3 class="numbers-title">Mais de</h3>
-                    <div class="numbers-grid" id="numbers-container">
-                        <div class="number-item">
-                            <span class="number-value">
-                                <span id="installs">250</span><span>k +</span>
-                            </span>
-                            <span class="number-label">/Profissionais</span>
-                        </div>
-                        <div class="number-item">
-                            <span class="number-value">
-                                <span id="hours">400</span>
-                                <span>+</span>
-                            </span>
-                            <span class="number-label">/Pais</span>
+                <div class="container">
+                    <div class="numbers-container">
+                        <h3 class="numbers-title">Mais de</h3>
+                        <div class="numbers-grid" id="numbers-container">
+                            <div class="number-item">
+                                <span class="number-value">
+                                    <span id="installs">1500</span>
+                                    <span>+</span>
+                                </span>
+                                <span class="number-label">/Profissionais</span>
+                            </div>
+                            <div class="number-item">
+                                <span class="number-value">
+                                    <span id="hours">6000</span>
+                                    <span>+</span>
+                                </span>
+                                <span class="number-label">/Pais</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="features" id="funcionalidades">
-                <div class="features-header">
-                    <h2 class="features-title">Funcionalidades</h2>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="bi bi-boombox-fill feature-icon"></i>
-                        <h3 class="feature-title">Acesso a Profissionais</h3>
-                        <div class="feature-description">
-                            Conecte-se diretamente com médicos, terapeutas e especialistas para tirar suas dúvidas e receber orientações personalizadas.
-                        </div>
+                <div class="container">
+                    <div class="features-header">
+                        <h2 class="features-title">Funcionalidades</h2>
                     </div>
-                    <div class="feature-card">
-                        <i class="bi bi-award-fill feature-icon"></i>
-                        <h3 class="feature-title">Comunidade de Apoio</h3>
-                        <div class="feature-description">
-                            Faça parte de uma comunidade de pais que compartilham experiências e oferecem suporte emocional mútuo.
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="bi bi-boombox-fill feature-icon"></i>
+                            <h3 class="feature-title">Acesso a Profissionais</h3>
+                            <div class="feature-description">
+                                Conecte-se diretamente com médicos, terapeutas e especialistas para tirar suas dúvidas e receber orientações personalizadas.
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature-card">
-                        <i class="bi bi-book-fill feature-icon"></i>
-                        <h3 class="feature-title">Informações Confiáveis</h3>
-                        <div class="feature-description">
-                            Acesse conteúdo verificado por especialistas sobre cuidados, tratamentos e desenvolvimento infantil.
+                        <div class="feature-card">
+                            <i class="bi bi-award-fill feature-icon"></i>
+                            <h3 class="feature-title">Comunidade de Apoio</h3>
+                            <div class="feature-description">
+                                Faça parte de uma comunidade de pais que compartilham experiências e oferecem suporte emocional mútuo.
+                            </div>
                         </div>
-                    </div>
-                    <div class="feature-card">
-                        <i class="bi bi-briefcase-fill feature-icon"></i>
-                        <h3 class="feature-title">Acompanhamento Personalizado</h3>
-                        <div class="feature-description">
-                            Mantenha um registro organizado do desenvolvimento e cuidados da criança, com lembretes e dicas personalizadas.
+                        <div class="feature-card">
+                            <i class="bi bi-book-fill feature-icon"></i>
+                            <h3 class="feature-title">Informações Confiáveis</h3>
+                            <div class="feature-description">
+                                Acesse conteúdo verificado por especialistas sobre cuidados, tratamentos e desenvolvimento infantil.
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="bi bi-briefcase-fill feature-icon"></i>
+                            <h3 class="feature-title">Acompanhamento Personalizado</h3>
+                            <div class="feature-description">
+                                Mantenha um registro organizado do desenvolvimento e cuidados da criança, com lembretes e dicas personalizadas.
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="testimonials" id="depoimentos">
-                <h3 class="testimonials-title">O que os usuários dizem</h3>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/people/p1.png" alt="homem" />
+                <div class="container">
+                    <h3 class="testimonials-title">O que os usuários dizem</h3>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/images/people/p1.png" alt="homem" />
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Carlos André</div>
+                                    <div class="testimonial-role">pai da Mariana (6 anos)</div>
+                                </div>
                             </div>
-                            <div class="testimonial-info">
-                                <div class="testimonial-name">Carlos André</div>
-                                <div class="testimonial-role">pai da Mariana (6 anos)</div>
-                            </div>
+                            <p class="testimonial-text">
+                                O Cuidado+Família mudou nossa rotina. Agora temos orientações claras e apoio emocional que nos ajudam a lidar com o dia a dia da nossa filha.
+                            </p>
                         </div>
-                        <p class="testimonial-text">
-                            O Cuidado+Família mudou nossa rotina. Agora temos orientações claras e apoio emocional que nos ajudam a lidar com o dia a dia da nossa filha.
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/people/p2.png" alt="mulher" />
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/images/people/p2.png" alt="mulher" />
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Janaina</div>
+                                    <div class="testimonial-role">mãe da Ana (10 anos)</div>
+                                </div>
                             </div>
-                            <div class="testimonial-info">
-                                <div class="testimonial-name">Janaina</div>
-                                <div class="testimonial-role">mãe da Ana (10 anos)</div>
-                            </div>
+                            <p class="testimonial-text">
+                                Nunca me senti tão acolhida. Encontrei respostas, conselhos e um espaço seguro para compartilhar minhas dúvidas como mãe de uma criança especial.
+                            </p>
                         </div>
-                        <p class="testimonial-text">
-                            Nunca me senti tão acolhida. Encontrei respostas, conselhos e um espaço seguro para compartilhar minhas dúvidas como mãe de uma criança especial.
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/people/p3.png" alt="mulher" />
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/images/people/p3.png" alt="mulher" />
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Patrícia</div>
+                                    <div class="testimonial-role">mãe da Rodrigo (15 anos)</div>
+                                </div>
                             </div>
-                            <div class="testimonial-info">
-                                <div class="testimonial-name">Patrícia</div>
-                                <div class="testimonial-role">mãe da Rodrigo (15 anos)</div>
-                            </div>
+                            <p class="testimonial-text">
+                                Com o app, consegui organizar os cuidados do meu filho e me sentir menos sozinha. A comunidade e os especialistas são incríveis.
+                            </p>
                         </div>
-                        <p class="testimonial-text">
-                            Com o app, consegui organizar os cuidados do meu filho e me sentir menos sozinha. A comunidade e os especialistas são incríveis.
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/people/p4.png" alt="mulher" />
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/images/people/p4.png" alt="mulher" />
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Dr. Marcos</div>
+                                    <div class="testimonial-role">Fisioterapeuta Pediátrico</div>
+                                </div>
                             </div>
-                            <div class="testimonial-info">
-                                <div class="testimonial-name">Dr. Marcos</div>
-                                <div class="testimonial-role">Fisioterapeuta Pediátrico</div>
-                            </div>
+                            <p class="testimonial-text">
+                                Como fisioterapeuta, vejo o aplicativo como uma ponte entre o cuidado clínico e o familiar. É acessível e realmente útil no acompanhamento diário.
+                            </p>
                         </div>
-                        <p class="testimonial-text">
-                            Como fisioterapeuta, vejo o aplicativo como uma ponte entre o cuidado clínico e o familiar. É acessível e realmente útil no acompanhamento diário.
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/people/p5.png" alt="homem" />
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/images/people/p5.png" alt="homem" />
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Dra. Elaine</div>
+                                    <div class="testimonial-role">neuropediatra</div>
+                                </div>
                             </div>
-                            <div class="testimonial-info">
-                                <div class="testimonial-name">Dra. Elaine</div>
-                                <div class="testimonial-role">neuropediatra</div>
-                            </div>
+                            <p class="testimonial-text">
+                                O Cuidado + Família ajuda os pais a entenderem melhor as necessidades das crianças. É uma ferramenta valiosa no suporte à reabilitação e bem-estar
+                            </p>
                         </div>
-                        <p class="testimonial-text">
-                            O Cuidado + Família ajuda os pais a entenderem melhor as necessidades das crianças. É uma ferramenta valiosa no suporte à reabilitação e bem-estar
-                        </p>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-header">
-                            <div class="testimonial-avatar">
-                                <img src="./assets/images/people/p6.png" alt="mulher" />
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="./assets/images/people/p6.png" alt="mulher" />
+                                </div>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-name">Dra. Paula</div>
+                                    <div class="testimonial-role">psicóloga infantil</div>
+                                </div>
                             </div>
-                            <div class="testimonial-info">
-                                <div class="testimonial-name">Dra. Paula</div>
-                                <div class="testimonial-role">psicóloga infantil</div>
-                            </div>
+                            <p class="testimonial-text">
+                                Participo como psicóloga no app e vejo como ele fortalece os vínculos entre pais, profissionais e informações confiáveis. Faz diferença real.
+                            </p>
                         </div>
-                        <p class="testimonial-text">
-                            Participo como psicóloga no app e vejo como ele fortalece os vínculos entre pais, profissionais e informações confiáveis. Faz diferença real.
-                        </p>
                     </div>
                 </div>
             </section>
 
             <section class="blog" id="blog">
-                <h3 class="blog-title">Conheça nosso blog</h3>
-                <div class="blog-grid">
-                    <a href="/blog/cuidados-diarios" class="blog-card">
-                        <div class="blog-image">
-                            <img src="./assets/images/home/sample.jpg" alt="Cuidados diários com crianças especiais" />
-                        </div>
-                        <h3 class="blog-title">Guia de Cuidados Diários</h3>
-                        <p class="blog-description">
-                            Aprenda técnicas e dicas práticas para o dia a dia com crianças que precisam de cuidados especiais.
-                        </p>
-                    </a>
-                    <a href="/blog/saude-emocional" class="blog-card">
-                        <div class="blog-image">
-                            <img src="./assets/images/home/sample.jpg" alt="Saúde emocional dos cuidadores" />
-                        </div>
-                        <h3 class="blog-title">Cuidando de Quem Cuida</h3>
-                        <p class="blog-description">
-                            Dicas importantes para manter a saúde emocional e o bem-estar dos pais e cuidadores.
-                        </p>
-                    </a>
+                <div class="container">
+                    <h3 class="blog-title">Conheça nosso blog</h3>
+                    <div class="blog-grid">
+                        <a href="/blog/cuidados-diarios" class="blog-card">
+                            <div class="blog-image">
+                                <img src="./assets/images/home/sample.jpg" alt="Cuidados diários com crianças especiais" />
+                            </div>
+                            <h3 class="blog-title">Guia de Cuidados Diários</h3>
+                            <p class="blog-description">
+                                Aprenda técnicas e dicas práticas para o dia a dia com crianças que precisam de cuidados especiais.
+                            </p>
+                        </a>
+                        <a href="/blog/saude-emocional" class="blog-card">
+                            <div class="blog-image">
+                                <img src="./assets/images/home/sample.jpg" alt="Saúde emocional dos cuidadores" />
+                            </div>
+                            <h3 class="blog-title">Cuidando de Quem Cuida</h3>
+                            <p class="blog-description">
+                                Dicas importantes para manter a saúde emocional e o bem-estar dos pais e cuidadores.
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <section class="newsletter" id="contato">
-                <div class="newsletter-content">
-                    <h2 class="newsletter-subtitle">Assine nossa newsletter e</h2>
-                    <h2 class="newsletter-title">mantenha-se atualizado</h2>
+                <div class="container">
+                    <div class="newsletter-content">
+                        <h2 class="newsletter-subtitle">Assine nossa newsletter e</h2>
+                        <h2 class="newsletter-title">mantenha-se atualizado</h2>
 
-                    <div class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="seu e-mail" />
-                        <a class="btn" href="">Inscreva-se</a>
+                        <div class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="seu e-mail" />
+                            <a class="btn" href="">Inscreva-se</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <footer>
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <img src="./assets/images/logos/logo-azul-fundo-transparente.png" alt="logo" class="footer-logo" />
-                    </div>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <img src="./assets/images/logos/logo-azul-fundo-transparente.png" alt="logo" class="footer-logo" />
+                        </div>
 
-                    <div class="footer-section">
-                        <h4 class="footer-title">Ficou com alguma dúvida?</h4>
-                        <div class="footer-links">
-                            <a href="#faq" class="footer-link">FAQ</a>
-                            <a href="#privacidade" class="footer-link">Política de privacidade</a>
+                        <div class="footer-section">
+                            <h4 class="footer-title">Ficou com alguma dúvida?</h4>
+                            <div class="footer-links">
+                                <a href="#faq" class="footer-link">FAQ</a>
+                                <a href="#privacidade" class="footer-link">Política de privacidade</a>
+                            </div>
                         </div>
                     </div>
                 </div>

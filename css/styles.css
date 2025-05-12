@@ -14,6 +14,7 @@
     --primary-text-color: #155eef;
     --link-hover: #155eef;
     --input-hover-bd-color: #155eef;
+    --container-max-width: 1200px;
 }
 
 * {
@@ -91,6 +92,14 @@ body {
     border-bottom: 3px solid #fd0101;
 }
 
+/* Container */
+.container {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 /* Header styles */
 header {
     display: flex;
@@ -107,6 +116,13 @@ header {
     z-index: 20;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 header > .collapsible-header {
@@ -219,8 +235,10 @@ header > .collapsible-header {
 
 /* Main content wrapper */
 main {
-    padding-top: 100px;
+    padding-top: 50px;
     display: block;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Hero section */
@@ -240,6 +258,8 @@ main {
     height: 100%;
     min-height: 100vh;
     width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
     justify-content: center;
     gap: 1.5rem;
     padding: 5%;
@@ -374,8 +394,8 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     width: 100%;
-    max-width: 1200px;
-    margin-top: 2rem;
+    max-width: var(--container-max-width);
+    margin: 2rem auto 0;
 }
 
 .feature-card {
@@ -423,6 +443,9 @@ main {
     display: grid;
     gap: 2.5rem;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 2rem auto 0;
 }
 
 .testimonial-card {
@@ -497,6 +520,9 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 2rem auto 0;
 }
 
 .blog-card {
@@ -527,11 +553,6 @@ main {
     object-fit: cover;
 }
 
-.blog-title {
-    font-size: 1.875rem;
-    font-weight: 600;
-}
-
 .blog-description {
     margin-top: 0.5rem;
     text-align: center;
@@ -552,6 +573,8 @@ main {
 .newsletter-content {
     display: flex;
     width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -599,6 +622,8 @@ footer {
     display: flex;
     height: 100%;
     width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
     justify-content: space-around;
     gap: 0.75rem;
 }

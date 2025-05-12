@@ -99,8 +99,8 @@ const hours = document.getElementById("hours");
 function animateNumbers() {
     let installsCount = 0;
     let hoursCount = 0;
-    const installsTarget = 250;
-    const hoursTarget = 400;
+    const installsTarget = 1500;
+    const hoursTarget = 6000;
     const duration = 2000;
     const interval = 20;
     const steps = duration / interval;
